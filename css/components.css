@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 使用视口高度确保占满整个屏幕 */
+    overflow: hidden; /* 防止整个页面滚动 */
+    width: 100vw;
+}  

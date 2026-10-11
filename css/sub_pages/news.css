@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+.back-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.news-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+h1 {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 0rem;
+    font-weight: 700;
+}
+
+.meta {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+p {
+    line-height: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.highlight {
+    color: #007acc;
+    font-weight: bold;
+}
+
+.cyclone-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.caption {
+    font-size: 0.8rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}

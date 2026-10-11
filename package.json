@@ -1,0 +1,6 @@
+{
+  "name": "cyclone-watch-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node tests/interaction-checks.mjs" }
+}

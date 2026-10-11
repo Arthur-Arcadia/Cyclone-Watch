@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Example supplies | Cyclone Watch</title>
+    <link rel="stylesheet" href="css/prototype.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="app-header">
+      <a class="brand" href="index.html">Cyclone Watch</a>
+      <span class="prototype-tag">HI-FI PROTOTYPE</span>
+    </header>
+
+    <aside class="demo-banner">
+      <strong>Demonstration only.</strong> Cyclone, inventory and news content is sample or archived material. Not live forecasts, warnings or stock reports.
+    </aside>
+
+    <main id="main" class="app-main">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">PLAN WITH SAMPLE DATA</p>
+          <h1>Example supply availability</h1>
+          <p>Select a shop on the map or in the list to view its demonstration inventory.</p>
+        </div>
+        <span class="prototype-tag">SAMPLE INVENTORY</span>
+      </div>
+
+      <div class="stock-legend">
+        <span>
+          <i class="stock-dot available"></i>Green: some stock available
+        </span>
+        <span>
+          <i class="stock-dot empty"></i>Red: all items out of stock
+        </span>
+      </div>
+
+      <div class="supplies-layout">
+        <section class="map-section" aria-label="Shop map">
+          <div class="map-shell">
+            <div id="map" role="region" aria-label="Example shop locations"></div>
+            <div id="map-status" class="map-status" role="status">
+              <p>Loading map…</p>
+              <button id="retry-map" type="button" hidden>Retry map</button>
+            </div>
+          </div>
+          <p class="map-caption">Example locations and quantities. No live retailer connection.</p>
+        </section>
+
+        <section class="shop-section" aria-labelledby="shop-list-title">
+          <h2 id="shop-list-title">Shops in this example</h2>
+          <p class="muted">The list remains available even if the map cannot load.</p>
+          <div id="shop-list" class="shop-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <dialog id="shop-dialog" class="shop-dialog" aria-labelledby="shop-title" aria-describedby="shop-subtitle">
+      <header class="dialog-header">
+        <div>
+          <p class="eyebrow">SAMPLE INVENTORY</p>
+          <h2 id="shop-title"></h2>
+        </div>
+        <button id="close-shop" class="close-button" type="button" aria-label="Close shop details" autofocus>×</button>
+      </header>
+
+      <div class="dialog-content">
+        <p id="shop-subtitle"></p>
+        <p id="shop-stock-status" class="stock-badge"></p>
+        <h3>Essential supplies</h3>
+        <div id="stock-items" class="stock-items"></div>
+        <p class="note">All quantities are invented demo units, not current retailer stock. Green means at least one item is available; individual items may still be sold out.</p>
+      </div>
+
+      <footer class="dialog-footer">
+        <button id="done-shop" type="button">Back to shops</button>
+      </footer>
+    </dialog>
+
+    <nav class="app-nav" aria-label="Main navigation">
+      <a href="index.html">
+        <img src="Images/homepage.png" alt="">Cyclone map
+      </a>
+      <a href="storage.html" aria-current="page">
+        <img src="Images/storgepage.png" alt="">Supplies
+      </a>
+      <a href="about.html">
+        <img src="Images/info.png" alt="">About
+      </a>
+    </nav>
+
+    <script type="module" src="js/storage.js"></script>
+  </body>
+</html>

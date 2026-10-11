@@ -1,0 +1,56 @@
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    background: #fff;
+    text-align: center;
+}
+
+.container {
+    padding: 2rem 1rem;
+    max-width: 360px;
+    margin: auto;
+    bottom:10vh;
+}
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+    font-weight: 700;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.member img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

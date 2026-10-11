@@ -1,0 +1,59 @@
+.typhoon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-color: #f0f4ff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.typhoon-name {
+    font-weight: bold;
+    color: #0052cc; /* 可根据等级变化颜色 */
+}
+
+.typhoon-title {
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.typhoon-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 9px;
+    flex-wrap: nowrap;
+}
+
+.meta-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    font-size: 100%;
+    border-radius: 8px;
+    background-color: #f5f6fa;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    white-space: nowrap;
+    height: 12px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.meta-item i {
+    text-decoration: none;
+    color: #333;
+    font-size: 10px;
+}
+
+.meta-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 10px;
+}
+

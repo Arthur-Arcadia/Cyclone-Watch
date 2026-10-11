@@ -1,0 +1,42 @@
+.map-area-main {
+    flex: 0 0 40%;
+}
+
+.map-area-storage {
+    flex: 0 0 90%;
+}
+
+#map {
+    height: 65vh;
+}
+
+.gmp-map {
+    height: 100%;
+    width: 100%;
+}
+
+.icon-img {
+    width: 5vh;
+    height: 5vh;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-center {
+    /* 以自身中心为旋转点 */
+    transform-origin: center center;
+    /* 每5秒一圈、线性、无限次 */
+    animation: spin 20s linear infinite;
+}
+
+.marker-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

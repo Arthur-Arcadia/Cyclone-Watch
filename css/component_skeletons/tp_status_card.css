@@ -1,0 +1,123 @@
+.typhoon-status-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../Images/loop.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-top: 12px;
+    color: #1f1f1f;
+    font-family: Arial, sans-serif;
+}
+
+.card-left,
+.card-center,
+.card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-center {
+    align-items: center;
+}
+
+.wind-speed {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.unit {
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.status-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.warning-tag {
+    background: #ff0707;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin-left: 4px;
+}
+
+.status-label {
+    font-size: 12px;
+    color: #292929;
+    margin-top: 4px;
+}
+
+.wind-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.typhoon-updates {
+    padding: 16px;
+    padding-bottom: 10vh;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    margin-left: 12px;
+    border-left: 2px solid #e0e6ef;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #3b82f6; /* 蓝色点 */
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.time {
+    font-size: 13px;
+    color: #4b5563;
+    margin-bottom: 4px;
+}
+
+.content {
+    font-size: 14px;
+    background: #f4f5f8;
+    padding: 10px 14px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    line-height: 1.5;
+}
+
+.extend {
+    font-size: 12px;
+    color: #4a90e2; /* 淡蓝色 */
+    text-decoration: underline; /* 下划线 */
+    cursor: pointer;
+    margin-top: 8px;
+}
